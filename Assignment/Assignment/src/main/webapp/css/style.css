@@ -1,0 +1,173 @@
+/* === 1. CÀI ĐẶT CHUNG === */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f4f6f9; /* Màu nền xám rất nhạt */
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* === 2. HEADER & NAV (Hiện đại hơn) === */
+.header-nav {
+	background: white;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+	font-weight: 800;
+	font-size: 1.5rem;
+	color: #ff6b00 !important; /* Màu cam thương hiệu */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.nav-link {
+	font-weight: 600;
+	color: #555 !important;
+	margin-left: 15px;
+	transition: color 0.3s;
+}
+
+.nav-link:hover {
+	color: #ff6b00 !important;
+}
+
+/* Dropdown đẹp hơn */
+.dropdown-menu {
+	border: none;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.dropdown-item:active {
+	background-color: #ff6b00;
+}
+
+/* === 3. VIDEO CARD (Sạch sẽ, đổ bóng nhẹ) === */
+.video-card {
+	border: none;
+	border-radius: 12px;
+	transition: transform 0.3s, box-shadow 0.3s;
+	background: white;
+	height: 100%; /* Cân bằng chiều cao */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.video-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-card .card-img-top {
+	height: 180px;
+	object-fit: cover;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+
+.video-card .card-body {
+	padding: 1.2rem;
+}
+
+.video-card .card-title a {
+	color: #2c3e50;
+	font-weight: 700;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.video-card .card-title a:hover {
+	color: #ff6b00;
+}
+
+/* Nút bấm trong card */
+.btn-like, .btn-share {
+	font-size: 0.85rem;
+	font-weight: 600;
+	border-radius: 20px;
+	padding: 5px 15px;
+	transition: all 0.2s;
+}
+
+.btn-like {
+	background-color: #eef1f6;
+	color: #333;
+}
+
+.btn-like:hover {
+	background-color: #ff6b00;
+	color: white;
+}
+
+.btn-share {
+	background-color: #fff3e0;
+	color: #ff6b00;
+}
+
+.btn-share:hover {
+	background-color: #e65100;
+	color: white;
+}
+
+/* === 4. FOOTER === */
+footer {
+	background-color: #2c3e50; /* Màu tối cho footer */
+	color: #ecf0f1;
+	padding: 2rem 0;
+	text-align: center;
+	margin-top: 3px;
+}
+
+footer p {
+	margin-bottom: 0.5rem;
+	opacity: 0.8;
+}
+
+/* === 5. TRANG CHI TIẾT (Detail Page) === */
+.video-detail-card {
+	border-radius: 12px;
+	overflow: hidden;
+	background: white;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-info-box {
+	padding: 25px;
+}
+
+.sidebar-video-item {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+	background: white;
+	border-radius: 8px;
+	transition: background 0.2s;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-video-item:hover {
+	background: #f8f9fa;
+}
+
+.sidebar-poster img {
+	width: 100px;
+	height: 60px;
+	border-radius: 6px;
+	object-fit: cover;
+}
+
+.sidebar-title {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #333;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
